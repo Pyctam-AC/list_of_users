@@ -1,0 +1,23 @@
+.card-users {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: start;
+  max-width: 1140px;
+}
+
+@media screen and (max-width: 1215px) {
+  .card-users {
+    max-width: 760px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .card-users {
+    width: 100%;
+    justify-content: center;
+  }
+}

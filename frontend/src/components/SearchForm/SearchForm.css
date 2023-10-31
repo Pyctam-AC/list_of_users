@@ -1,0 +1,104 @@
+.search-form {
+  margin: 0 auto;
+  padding: 0;
+  width: max-content;
+  margin-top: 70px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.search-input {
+  margin: 0 auto;
+  padding: 0;
+  width: 1140px;
+  height: 28px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  background-size: contain;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 24px;
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
+}
+
+.search-input:focus {
+  border-bottom: 1px solid #000;
+}
+
+.find-button {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  box-sizing: content-box;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background-image: url('../../images/icon_loupe.svg');
+  cursor: pointer;
+}
+
+.reset-button {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background-color: inherit;
+  object-fit: initial;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-image: url('../../images/icon_close_black.svg');
+  cursor: pointer;
+}
+
+.find-button.reset-button:hover {
+  scale: 1.02;
+  opacity: 0.9;
+}
+
+.error {
+  margin: 0 auto;
+  margin-top: 5px;
+  max-width: 358px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: #EE3465;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  box-sizing: border-box;
+  height: 25px;
+}
+
+@media screen and (max-width: 1215px) {
+  .search-input {
+    width: 708px;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .search-input {
+    width: 292px;
+    font-size: 18px;
+    text-align: left;
+  }
+
+}

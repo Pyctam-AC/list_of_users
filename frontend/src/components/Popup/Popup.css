@@ -1,0 +1,190 @@
+.popup {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .5);
+  opacity: 0;
+  z-index: 2;
+  display: flex;
+  visibility: hidden;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.popup.popup_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__container {
+  width: 500px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.popup__text-container {
+  margin: 0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__close-button {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-image: url(../../images/icon_close_black.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, .0);
+  background-position: center;
+  background-size: cover;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+.popup__close-button:hover {
+  opacity: 60%;
+}
+
+.popup__close-button:active {
+  transform: scale(.9);
+}
+
+
+.popup__registr-icon_ok {
+  background-image: url(../../images/ok_registration.svg);
+}
+
+.popup__registr-icon_er {
+  background-image: url(../../images/error-registration.svg);
+}
+
+.popup__registr-icon:hover {
+  opacity: 60%;
+}
+
+
+.popup__registr-icon:active {
+  transform: scale(.9);
+}
+
+.popup__container-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--plumbum, #262C40);
+}
+
+.popup__contacts-container {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.popup__contacts-data {
+  margin: 0;
+  margin-top: 14px;
+  padding: 0;
+  display: flex;
+  align-items: start;
+}
+
+.popup__contacts-key {
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  color: var(--plumbum, #262C40);
+  text-align: left;
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+  font-size: clamp(12px, 1.5vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.popup__contacts-value {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  color: var(--Asphalt, #8189A3);
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+  font-size: clamp(12px, 1.5vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.popup__dop-info {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.dop-info__title{
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  color: var(--plumbum, #262C40);
+  text-align: left;
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+  font-size: clamp(12px, 1.6vw, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.dop-info__text{
+  margin: 0;
+  padding: 0;
+  color: var(--Asphalt, #8189A3);
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+  font-size: clamp(12px, 1.5vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+
+@media screen and (max-width: 890px) {
+  .popup__container {
+    width: 282px;
+  }
+
+  .popup__text-container {
+    padding: 15px;
+  }
+
+  .popup__close-button {
+    width: 15px;
+    height: 15px;
+  }
+
+  .popup__container-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
